@@ -5,25 +5,44 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">    
-			<div class="container-fluid">
-			<div class="navbar-header">
-			<a class="navbar-brand" href="#">WebSiteName</a>
-			</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-				</ul>
-			</div>
-		</nav>      
-		 <h1 class="h1">Star Wars</h1>
+		<!--Navigation Bar (appears as a vertical list...)-->
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Navbar</a>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		      	<!--Standard-->
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		      	<!--Links to a different page-->
+		        <a class="nav-link" href="#">Link</a>
+		      </li>
+		      <li class="nav-item">
+		      	<!--Disabled-->
+		        <a class="nav-link disabled" href="#">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</nav>     
+		<h1>Sample Text</h1>
+		<br>
+		<h2>Star Wars</h1>
 		<h3>Dramatis Personae</h3>
 		<ul>
 			<li><a href="http://starwars.wikia.com/wiki/Obi-Wan_Kenobi">
@@ -49,10 +68,76 @@
 			<br>
 Copyright &copy; 2017 Obi-Wan Kenobi
 			<br>
-			<table class="table">
-	<tr><th>Column 1</th><th>Column 2</th></tr>
-	<tr><td>Data 1</td><td>Data 2</td></tr>
-			</table>
-			
+			<!--Grid-->
+			<br><h1>Grid</h1><br>
+			<div class="row">
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			  <div class="col-md-1">1/12</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-8">8/12</div>
+			  <div class="col-md-4">4/12</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-4">4/12</div>
+			  <div class="col-md-4">4/12</div>
+			  <div class="col-md-4">4/12</div>
+			</div>
+			<div class="row">
+			  <div class="col-md-6">6/12</div>
+			  <div class="col-md-6">6/12</div>
+			</div>
+
+			<!--Carousel-->
+			<br>
+			<h1>Carousel</h1>
+			<br>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="xkcd1.png" alt="Picture 1">
+    </div>
+
+    <div class="item">
+      <img src="xkcd2.png" alt="Picture 2">
+    </div>
+
+    <div class="item">
+      <img src="xkcd3.png" alt="Picture 3">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <!-- Bootstrap Js CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>			
 	</body>
 </html>
